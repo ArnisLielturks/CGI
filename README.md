@@ -1,14 +1,14 @@
 CGI
 
 nginx configuration example
-'''
+```
 events {
   worker_connections 1024;
 }
 
 http {
   server {
-    listen 80;
+     listen 80;
     server_name localhost;
 
     location /cgi {
@@ -34,21 +34,21 @@ http {
     }
   }
 }
-'''
+```
 
 To compile script use the following command
-'''
+```
 make
-'''
+```
 
 To remove compiled files use
-'''
+```
 make clean
-'''
+```
 
 To start cgi script use following command in the folder where the compiled script is located
-'''
+```
 spawn-fcgi -p 8000 -n main.o
-'''
+```
 
 To see the script in action open 127.0.0.1/cgi url
