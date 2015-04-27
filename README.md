@@ -1,4 +1,5 @@
 Simple CGI script
+
 Besides the nginx you will also need the following packages
 ```
 sudo apt-get install libfcgi-dev
