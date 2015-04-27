@@ -1,4 +1,9 @@
-CGI
+Simple CGI script
+Besides the nginx you will also need the following packages
+```
+sudo apt-get install libfcgi-dev
+sudo apt-get install spawn-fcgi
+```
 
 nginx configuration example
 ```
